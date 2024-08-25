@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  
+  "homepage": "./",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy" : "https://fixedmart.onrender.com",
+  "proxy": "https://fixedmart.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
