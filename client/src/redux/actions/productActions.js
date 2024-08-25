@@ -9,7 +9,7 @@ const URL = 'http://localhost:8000';
 export const getProducts =  () => async(dispatch) => {
     try{
         // const response = await axios.get(`${URL}/products`)
-        const {data} = await axios.get(`${URL}/products`)
+        const {data} = await axios.get(`/products`)
         // console.log(response);
         dispatch({type : actionTypes.GET_PRODUCTS_SUCCESS, payload : data })
     }
@@ -26,7 +26,7 @@ export const getProductDetails = (id) => async (dispatch) => {
         dispatch({type : actionTypes.GET_PRODUCT_DETAILS_REQUEST});
 
 
-        const {data} = await axios.get(`${URL}/product/${id}`);
+        const {data} = await axios.get(`/product/${id}`);
 
         dispatch ({type : actionTypes.GET_PRODUCT_DETAILS_SUCCESS, payload : data});
 
