@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const addToCart = (id, quantity) => async (dispatch) => {
     try { 
-        const { data } = await axios.get(`/product/${id}`);
+        const { data } = await axios.get(`https://fixedmart.onrender.com/product/${id}`);
 
         dispatch({ type: actionTypes.ADD_TO_CART, payload: { ...data, quantity } });
 
