@@ -113,7 +113,7 @@ const Slider = ({ products, title, timer }) => {
             >
 
                 {
-                    products.map(data => (
+                    products?.map(data => (
                         <Link to={`/product/${data.id}`} style={{textDecoration : 'none'}} key={data.id}>
                             <Box textAlign="center" style={{ padding: '25px 15px' }}>
                                 <ProductImg src={data.url} alt="products" />
