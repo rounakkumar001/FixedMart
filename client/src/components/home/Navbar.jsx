@@ -81,7 +81,7 @@ const NavBar = () => {
         <>
             <Container>
                 {
-                    navData.map(Data => (
+                    navData?.map(Data => (
                         <ItemContainer key={Data.url}>
                             <img src={Data.url} alt="NavData" style={{ width: 64 }} />
                             <Text>{Data.text}</Text>

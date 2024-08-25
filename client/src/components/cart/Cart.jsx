@@ -78,7 +78,7 @@ const Cart = () => {
 
     return (
         <>
-        { cartItems.length ? 
+        { cartItems?.length ? 
             <Component container>
                 <LeftComponent item lg={9} md={9} sm={12} xs={12}>
                     <Header>
