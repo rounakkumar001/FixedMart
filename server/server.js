@@ -22,6 +22,9 @@ app.use(cors({
 }));
 
 app.use('/', Router);
+app.get('/', (req, res) => {
+    res.send({status : "Server is running"})
+})
 
 Connection().then(() => {
     app.listen(PORT , ()=> {
